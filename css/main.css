@@ -1,0 +1,246 @@
+/*** FCC - Responsive Web Dev - Project #3: Product Landing Page CSS ***/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+/*** Media Query ***/
+
+@media (min-height: 350px) { /* CSS Rules */ }
+
+
+body {
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(255, 162, 75); */
+}
+
+h1{
+    font-family: Calistoga, arial;
+    font-size: 3em;
+}
+
+h1, h6{
+    color: white;
+}
+
+h3{
+    color:#ffffff;
+}
+
+
+/*** Links ***/
+
+a:link {
+    color: white;
+    padding: .5em;
+    border-radius: 5%;
+}
+
+  /* visited link */
+a:visited {
+    color: hsl(0, 0%, 100%);
+    padding: .5em;
+    border-radius: 5%;
+}
+
+  /* mouse over link */
+a:hover {
+        background-color: hsl(44, 73%, 72%);
+        padding: .5em;
+        border-radius: 5%;
+}
+
+  /* selected link */
+a:active {
+    color: #797979;
+    padding: .5em;
+    border-radius: 5%;
+}
+
+
+/*** Nav Bar ***/
+/* Note: The FCC brief insists this be a fixed nav bar however, in this draft, I've changed it to be entirely styled by flex */
+
+#nav-bar{
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 209, 60);
+    background-image: url('/images/bee.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-bottom: 5em; */
+} 
+
+#nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1em;
+    list-style-type: none;
+}
+
+.nav-link{
+    padding: 1em;
+}
+
+#header-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/*** Video and Credits ***/
+
+.video{
+    display: flex;
+    justify-content: center;
+    padding: 2em
+}
+
+#credits{
+    display: flex;
+    justify-content: center;
+}
+
+.credits{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align:center;
+    padding: 1em 1em 3em 1em;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.credits>h3{
+    color: rgb(66, 66, 66);
+    padding: .3em;
+    font-size: 1.1em;
+    }
+
+
+/***  Gallery ***/
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    padding: 3em 5em 3em 5em;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+#film-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 3em; 
+} 
+
+.info{
+    padding: 1em 3em 0 0;
+}
+
+#gallery-container{
+    width: 100%;
+}
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1em;
+}
+
+.gallery-img{
+    padding: .1em .2em .1em .2em ;
+}
+
+.gallery-img>img {
+    width:100px;
+    height: 100px;
+    object-fit: cover;
+    transition:all 2s;
+}
+
+.gallery-img>img:hover {
+    padding: .3em;
+    background-color: rgb(214, 214, 214);
+}
+
+
+/*** Form ***/
+
+#form-container{
+    display: flex;
+    padding: 3em 5em 3em 5em;
+    /* border-bottom: 1px solid rgb(200, 200, 200); */
+    background-color: hsl(49, 87%, 51%);
+    color: white;
+}
+
+#form-table{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 3em;
+}
+
+#form-table>h2{
+    padding-bottom: 2em;
+}
+
+.form-element{
+    height:3em;
+    width: 80%;
+    margin-bottom:  2em;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+#social{
+    width: 37%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.social-icons{
+    padding-top: 1em;
+}
+
+.fa {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+#submit{
+    color: hsl(49, 87%, 51%);
+    background-color: hsla(0, 0%, 100%);
+}
+
+
+/*** Footer ***/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color:hsl(49, 87%, 51%)
+}
+
+.footer-link:link, .footer-link:visited, .footer-link:hover, .footer-link:active{
+    color: black;
+    font-size: small;
+    padding: 2em 2em 2em 6em;
+    background-color: hsl(49, 87%, 51%);
+}
+
